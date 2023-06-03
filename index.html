@@ -269,25 +269,18 @@
 	</tbody>
 </table>
 	<button onclick="agregarFila()">Agregar fila</button>
-
     <script>
-    function agregarFila() {
-    var tabla = document.getElementById("miTabla");
-    var filas = tabla.getElementsByTagName("tr");
-    var ultimaFila = filas[filas.length - 1]; // Obtén la última fila existente
+        function agregarFila() {
+            var tabla = document.getElementById("miTabla");
+            var filas = tabla.getElementsByTagName("tr");
+            var ultimaFila = filas[filas.length - 1]; // Obtén la última fila existente
 
-    var nuevaFila = document.createElement("tr");
-    nuevaFila.innerHTML = ultimaFila.innerHTML; // Copia el contenido de la última fila
+            var nuevaFila = document.createElement("tr");
+            nuevaFila.innerHTML = ultimaFila.innerHTML; // Copia el contenido de la última fila
 
-    // Genera un nuevo id para el input de la fila nueva
-    var inputNuevo = nuevaFila.querySelector("input");
-    var ultimoId = inputNuevo.getAttribute("id");
-    var nuevoId = "cajaTexto" + (parseInt(ultimoId.substr(9)) + 1);
-    inputNuevo.setAttribute("id", nuevoId);
-
-    tabla.appendChild(nuevaFila); // Agrega la nueva fila al final de la tabla
-}
-</script>
+            tabla.appendChild(nuevaFila); // Agrega la nueva fila al final de la tabla
+        }
+    </script>
 
 </div>
  <h3>Foto de tablero </h3>
