@@ -150,7 +150,7 @@
             </td>
         </tr>
    
-</div>	
+<br>	
 <table id="miTabla" style="border: none;border-collapse: collapse;width:100%;">
     <tbody>
         <tr>
@@ -233,7 +233,6 @@
   }
 </script>
 
-</div>
 	<br>
 	<table id="miTabla2" style="width:100%;border-collapse:collapse;" >    
         <tr>
@@ -265,9 +264,11 @@
                 <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;vertical-align:  baseline;'><strong><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'><textarea style="width: 90%; height: 100%; font-size: 15px; font-family: 'Calibri', sans-serif; line-height: normal; resize: none;"></textarea></span></strong></p>
             </td>
         </tr>
-		</table>  
+	
+	</table>
+	  <script>
       <button onclick="agregarFila()">Anadir Tarea</button>
-    <script>
+  
         function agregarFila() {
             var tabla = document.getElementById("miTabla2");
             var filas = tabla.getElementsByTagName("tr");
@@ -275,13 +276,11 @@
 
             var nuevaFila = document.createElement("tr");
             nuevaFila.innerHTML = ultimaFila.innerHTML; // Copia el contenido de la última fila
-
             tabla.appendChild(nuevaFila); // Agrega la nueva fila al final de la tabla
         }
     </script>
+	<script>
 	<button onclick="eliminarUltimaFila()">Eliminar</button>
-
-<script>
   function eliminarUltimaFila() {
     var tabla = document.getElementById("miTabla2");
     var filas = tabla.getElementsByTagName("tr");
