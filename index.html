@@ -30,6 +30,29 @@
 <p><br></p>
     
 <body>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .tabla-container {
+        width: 100%;
+        overflow-x: auto; /* Esto permite hacer scroll horizontal si el contenido excede el ancho de la pantalla */
+    }
+    
+    .tabla {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .tabla th, .tabla td {
+        padding: 8px;
+        border: 1px solid #000;
+    }
+</style>
+
+<div class="tabla-container">	
 <table style="width: 100%;border-collapse:collapse;">
     <tbody>
         <tr>
@@ -58,15 +81,13 @@
                     <option value="VALIENTES">VALIENTES</option>&nbsp;
                 </select></td>
             <td style="width: 50%;border-right: 1pt solid windowtext;borde-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 14.1pt;vertical-align: top;">
-		    <input type="text" style="width: 100%;font-size:20px; font-family:'Calibri Light',sans-serif;"></td>
+		    <input type="text" style="width: 100%;font-size:15px; font-family:'Calibri Light',sans-serif;"></td>
             <td style="width: 10%;border-right: 1pt solid windowtext;borde-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 14.1pt;vertical-align: top;">
-		    <input type="date" style="width: 100%;font-size:140pt;font-size:22px; font-family:'Calibri Light',sans-serif;"></td>
+		    <input type="date" style="width: 100%;font-size:15px; font-family:'Calibri Light',sans-serif;"></td>
         </tr>
     </tbody>
 </table>
 <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;vertical-align:baseline;'><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>&nbsp;</span></p>
-<p><br></p>
-<p><br></p>
 <p><br></p>
 <table style="width:100%;border-collapse:collapse;">
     <tbody>
@@ -188,6 +209,7 @@
         </tr>
     </tbody>
 </table>
+</div>	
 <table style="border: none;border-collapse: collapse;width:100%;">
     <tbody>
         <tr>
@@ -237,7 +259,7 @@
 	    </tr>
     </tbody>
 </table>
-
+</div>
  <h3>Subir/Tomar foto </h3>
       <input type="file" id="foto" name="foto"><br><br>
       
