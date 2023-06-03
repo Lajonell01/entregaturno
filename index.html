@@ -1249,6 +1249,20 @@
 	    </tr>
     </tbody>
 </table>
+	<button onclick="agregarFila()">Agregar fila</button>
+
+    <script>
+        function agregarFila() {
+            var tabla = document.getElementById("miTabla");
+            var filas = tabla.getElementsByTagName("tr");
+            var ultimaFila = filas[filas.length - 1]; // Obtén la última fila existente
+
+            var nuevaFila = document.createElement("tr");
+            nuevaFila.innerHTML = ultimaFila.innerHTML; // Copia el contenido de la última fila
+
+            tabla.appendChild(nuevaFila); // Agrega la nueva fila al final de la tabla
+        }
+    </script>
 </div>
  <h3>Foto de tablero </h3>
       <input type="file" id="foto" name="foto"><br><br>
