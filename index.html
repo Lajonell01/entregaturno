@@ -278,22 +278,9 @@
             var nuevaFila = document.createElement("tr");
             nuevaFila.innerHTML = ultimaFila.innerHTML; // Copia el contenido de la última fila
             tabla.appendChild(nuevaFila); // Agrega la nueva fila al final de la tabla
-        }
+	  }
     </script>
-	<script>
-	<button onclick="eliminarUltimaFila()">Eliminar</button>
-  function eliminarUltimaFila() {
-    var tabla = document.getElementById("miTabla2");
-    var filas = tabla.getElementsByTagName("tr");
-    
-    // Verifica si hay al menos dos filas para evitar eliminar la fila de encabezado
-    if (filas.length > 1) {
-      var ultimaFila = filas[filas.length - 1];
-      tabla.removeChild(ultimaFila);
-    }
-  }
-</script>
- <br>
+	 <br>
   <h1>foto de tablero </h1>
       <input type="file" id="foto" name="foto"><br><br>
       
