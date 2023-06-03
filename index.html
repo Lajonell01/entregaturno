@@ -219,10 +219,24 @@
             tabla.appendChild(nuevaFila); // Agrega la nueva fila al final de la tabla
         }
     </script>
+	<button onclick="eliminarUltimaFila()">Eliminar</button>
+
+<script>
+  function eliminarUltimaFila() {
+    var tabla = document.getElementById("miTabla");
+    var filas = tabla.getElementsByTagName("tr");
+    
+    // Verifica si hay al menos dos filas para evitar eliminar la fila de encabezado
+    if (filas.length > 1) {
+      var ultimaFila = filas[filas.length - 1];
+      tabla.removeChild(ultimaFila);
+    }
+  }
+</script>
 
 </div>
-
-	<table id="miTabla2">    
+	<br>
+	<table id="miTabla2" style="width:100%;border-collapse:collapse;" >    
         <tr>
             <td colspan="9" style="width: 467.2pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;background: rgb(217, 217, 217);padding: 0in;height: 15.75pt;vertical-align: top;">
                 <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;vertical-align:baseline;'><strong><span style='font-size:16px;font-family:"Calibri Light",sans-serif;color:black;'>PLAN DE TRABAJO&nbsp;</span></strong></p>
@@ -266,6 +280,20 @@
             tabla.appendChild(nuevaFila); // Agrega la nueva fila al final de la tabla
         }
     </script>
+	<button onclick="eliminarUltimaFila()">Eliminar</button>
+
+<script>
+  function eliminarUltimaFila() {
+    var tabla = document.getElementById("miTabla2");
+    var filas = tabla.getElementsByTagName("tr");
+    
+    // Verifica si hay al menos dos filas para evitar eliminar la fila de encabezado
+    if (filas.length > 1) {
+      var ultimaFila = filas[filas.length - 1];
+      tabla.removeChild(ultimaFila);
+    }
+  }
+</script>
     </tbody>
 </table><br>
   <h1>foto de tablero </h1>
@@ -290,5 +318,6 @@
         reader.readAsDataURL(file);
       });
     </script>
+
  </body>
 </html>
