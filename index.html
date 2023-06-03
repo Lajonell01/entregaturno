@@ -258,16 +258,169 @@
                 </select><br></td>
             <td colspan="6" style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-image: initial; border-width: 1pt 1pt 1pt 1pt; border-style: solid; border-color: rgb(191, 191, 191) black rgb(191, 191, 191) rgb(191, 191, 191); background: white; width: 42.2785%;'><textarea style="width: 90%; height: 100%; font-size: 12px; font-family: 'Calibri', sans-serif; line-height: none; resize: none;"></textarea><br></td>
 	    </tr>
+	    <tr>
+            <td style='color: black; font-size: 12px; font-weight: 700; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial; border-left: none; width: 6%;'>
+		    2 &nbsp;<select onchange="cambiarColor(this.value)">
+		                                <option value="WHITE">F.O</option>
+                                                <option value="LightSkyBlue">24HRS</option>
+                                                <option value="Salmon">>24HRS</option>
+                                                <option value="GreenYellow">12HRS</option>
+                </select>
+                <script>
+                    function cambiarColor(color) {
+                    var cajaTexto = document.getElementById("cajaTexto");
+                    cajaTexto.style.backgroundColor = color;
+                    }
+                </script>
+            </td>
+            <td style='color: black; font-size: 12px; font-weight: 700; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-image: initial; border-width: 1pt 1pt 1pt 1pt; border-style: solid; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) windowtext; background: white; height: 34.25pt; width: 9.5642%;'><select style="width: 100%; font-size:12px; font-family:'Calibri Light',sans-serif;">&nbsp;<option value="Sector">Selecciona la flota</option>
+                    <option value="CAT240">CAT240</option>
+                    <option value="CAT190">CAT190</option>
+                </select><br></td>
+            <td style='color: black; font-size: 10px; font-weight: 700; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial; border-left: none; width: 7.7121%;'><input type="text" id="cajaTexto" style="width: 80%; height: 100%; font-size: 10px;text-align: center; vertical-align: middle; font-family: 'Calibri', sans-serif; line-height: normal; resize: none;"></td>
+            <td style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial; border-left: none; width: 16.6667%;'><input type="date" id="fecha" style="width: 100%; height: 100%; font-size:12px; font-family:'Calibri Light',sans-serif;"><br><select style="width: 60%; font-size:12px; font-family:'Calibri Light',sans-serif;">
+		    <option value="Sector">Turno</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                </select><br></td>
+            <td style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial; background: white; border-left: none; width: 6.1205%;'><select style="width: 100%; font-size:12px; font-family:'Calibri Light',sans-serif;">&nbsp;&nbsp;
+		    <option value="SI">SI</option>
+                    <option value="NO">NO</option>
+                </select><br></td>
+            <td style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial;border-left: none; background: white; width: 13.5642%;'><select style="width: 100%; font-size:19x; font-family:'Calibri Light',sans-serif;">&nbsp;<option value="Sector">Seleciona</option>
+                    <option value="TALLER">TALLER</option>
+                    <option value="LAVADERO">LAVADERO</option>
+                    <option value="LLANTAS">LLANTAS</option>
+                    <option value="CAMPO">CAMPO</option>
+                    <option value="SOLDADURA">SOLDADURA</option>
+                    <option value="ENSAMBLE">ENSAMBLE</option>&nbsp;
+                </select><br></td>
+            <td colspan="6" style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-image: initial; border-width: 1pt 1pt 1pt 1pt; border-style: solid; border-color: rgb(191, 191, 191) black rgb(191, 191, 191) rgb(191, 191, 191); background: white; width: 42.2785%;'><textarea style="width: 90%; height: 100%; font-size: 12px; font-family: 'Calibri', sans-serif; line-height: none; resize: none;"></textarea><br></td>
+	    </tr><tr>
+            <td style='color: black; font-size: 12px; font-weight: 700; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial; border-left: none; width: 6%;'>
+		    3 &nbsp;<select onchange="cambiarColor(this.value)">
+		                                <option value="WHITE">F.O</option>
+                                                <option value="LightSkyBlue">24HRS</option>
+                                                <option value="Salmon">>24HRS</option>
+                                                <option value="GreenYellow">12HRS</option>
+                </select>
+                <script>
+                    function cambiarColor(color) {
+                    var cajaTexto = document.getElementById("cajaTexto");
+                    cajaTexto.style.backgroundColor = color;
+                    }
+                </script>
+            </td>
+            <td style='color: black; font-size: 12px; font-weight: 700; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-image: initial; border-width: 1pt 1pt 1pt 1pt; border-style: solid; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) windowtext; background: white; height: 34.25pt; width: 9.5642%;'><select style="width: 100%; font-size:12px; font-family:'Calibri Light',sans-serif;">&nbsp;<option value="Sector">Selecciona la flota</option>
+                    <option value="CAT240">CAT240</option>
+                    <option value="CAT190">CAT190</option>
+                </select><br></td>
+            <td style='color: black; font-size: 10px; font-weight: 700; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial; border-left: none; width: 7.7121%;'><input type="text" id="cajaTexto" style="width: 80%; height: 100%; font-size: 10px;text-align: center; vertical-align: middle; font-family: 'Calibri', sans-serif; line-height: normal; resize: none;"></td>
+            <td style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial; border-left: none; width: 16.6667%;'><input type="date" id="fecha" style="width: 100%; height: 100%; font-size:12px; font-family:'Calibri Light',sans-serif;"><br><select style="width: 60%; font-size:12px; font-family:'Calibri Light',sans-serif;">
+		    <option value="Sector">Turno</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                </select><br></td>
+            <td style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial; background: white; border-left: none; width: 6.1205%;'><select style="width: 100%; font-size:12px; font-family:'Calibri Light',sans-serif;">&nbsp;&nbsp;
+		    <option value="SI">SI</option>
+                    <option value="NO">NO</option>
+                </select><br></td>
+            <td style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial;border-left: none; background: white; width: 13.5642%;'><select style="width: 100%; font-size:19x; font-family:'Calibri Light',sans-serif;">&nbsp;<option value="Sector">Seleciona</option>
+                    <option value="TALLER">TALLER</option>
+                    <option value="LAVADERO">LAVADERO</option>
+                    <option value="LLANTAS">LLANTAS</option>
+                    <option value="CAMPO">CAMPO</option>
+                    <option value="SOLDADURA">SOLDADURA</option>
+                    <option value="ENSAMBLE">ENSAMBLE</option>&nbsp;
+                </select><br></td>
+            <td colspan="6" style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-image: initial; border-width: 1pt 1pt 1pt 1pt; border-style: solid; border-color: rgb(191, 191, 191) black rgb(191, 191, 191) rgb(191, 191, 191); background: white; width: 42.2785%;'><textarea style="width: 90%; height: 100%; font-size: 12px; font-family: 'Calibri', sans-serif; line-height: none; resize: none;"></textarea><br></td>
+	    </tr><tr>
+            <td style='color: black; font-size: 12px; font-weight: 700; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial; border-left: none; width: 6%;'>
+		    4 &nbsp;<select onchange="cambiarColor(this.value)">
+		                                <option value="WHITE">F.O</option>
+                                                <option value="LightSkyBlue">24HRS</option>
+                                                <option value="Salmon">>24HRS</option>
+                                                <option value="GreenYellow">12HRS</option>
+                </select>
+                <script>
+                    function cambiarColor(color) {
+                    var cajaTexto = document.getElementById("cajaTexto");
+                    cajaTexto.style.backgroundColor = color;
+                    }
+                </script>
+            </td>
+            <td style='color: black; font-size: 12px; font-weight: 700; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-image: initial; border-width: 1pt 1pt 1pt 1pt; border-style: solid; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) windowtext; background: white; height: 34.25pt; width: 9.5642%;'><select style="width: 100%; font-size:12px; font-family:'Calibri Light',sans-serif;">&nbsp;<option value="Sector">Selecciona la flota</option>
+                    <option value="CAT240">CAT240</option>
+                    <option value="CAT190">CAT190</option>
+                </select><br></td>
+            <td style='color: black; font-size: 10px; font-weight: 700; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial; border-left: none; width: 7.7121%;'><input type="text" id="cajaTexto" style="width: 80%; height: 100%; font-size: 10px;text-align: center; vertical-align: middle; font-family: 'Calibri', sans-serif; line-height: normal; resize: none;"></td>
+            <td style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial; border-left: none; width: 16.6667%;'><input type="date" id="fecha" style="width: 100%; height: 100%; font-size:12px; font-family:'Calibri Light',sans-serif;"><br><select style="width: 60%; font-size:12px; font-family:'Calibri Light',sans-serif;">
+		    <option value="Sector">Turno</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                </select><br></td>
+            <td style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial; background: white; border-left: none; width: 6.1205%;'><select style="width: 100%; font-size:12px; font-family:'Calibri Light',sans-serif;">&nbsp;&nbsp;
+		    <option value="SI">SI</option>
+                    <option value="NO">NO</option>
+                </select><br></td>
+            <td style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial;border-left: none; background: white; width: 13.5642%;'><select style="width: 100%; font-size:19x; font-family:'Calibri Light',sans-serif;">&nbsp;<option value="Sector">Seleciona</option>
+                    <option value="TALLER">TALLER</option>
+                    <option value="LAVADERO">LAVADERO</option>
+                    <option value="LLANTAS">LLANTAS</option>
+                    <option value="CAMPO">CAMPO</option>
+                    <option value="SOLDADURA">SOLDADURA</option>
+                    <option value="ENSAMBLE">ENSAMBLE</option>&nbsp;
+                </select><br></td>
+            <td colspan="6" style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-image: initial; border-width: 1pt 1pt 1pt 1pt; border-style: solid; border-color: rgb(191, 191, 191) black rgb(191, 191, 191) rgb(191, 191, 191); background: white; width: 42.2785%;'><textarea style="width: 90%; height: 100%; font-size: 12px; font-family: 'Calibri', sans-serif; line-height: none; resize: none;"></textarea><br></td>
+	    </tr><tr>
+            <td style='color: black; font-size: 12px; font-weight: 700; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial; border-left: none; width: 6%;'>
+		    5 &nbsp;<select onchange="cambiarColor(this.value)">
+		                                <option value="WHITE">F.O</option>
+                                                <option value="LightSkyBlue">24HRS</option>
+                                                <option value="Salmon">>24HRS</option>
+                                                <option value="GreenYellow">12HRS</option>
+                </select>
+                <script>
+                    function cambiarColor(color) {
+                    var cajaTexto = document.getElementById("cajaTexto");
+                    cajaTexto.style.backgroundColor = color;
+                    }
+                </script>
+            </td>
+            <td style='color: black; font-size: 12px; font-weight: 700; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-image: initial; border-width: 1pt 1pt 1pt 1pt; border-style: solid; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) windowtext; background: white; height: 34.25pt; width: 9.5642%;'><select style="width: 100%; font-size:12px; font-family:'Calibri Light',sans-serif;">&nbsp;<option value="Sector">Selecciona la flota</option>
+                    <option value="CAT240">CAT240</option>
+                    <option value="CAT190">CAT190</option>
+                </select><br></td>
+            <td style='color: black; font-size: 10px; font-weight: 700; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial; border-left: none; width: 7.7121%;'><input type="text" id="cajaTexto" style="width: 80%; height: 100%; font-size: 10px;text-align: center; vertical-align: middle; font-family: 'Calibri', sans-serif; line-height: normal; resize: none;"></td>
+            <td style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial; border-left: none; width: 16.6667%;'><input type="date" id="fecha" style="width: 100%; height: 100%; font-size:12px; font-family:'Calibri Light',sans-serif;"><br><select style="width: 60%; font-size:12px; font-family:'Calibri Light',sans-serif;">
+		    <option value="Sector">Turno</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                </select><br></td>
+            <td style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial; background: white; border-left: none; width: 6.1205%;'><select style="width: 100%; font-size:12px; font-family:'Calibri Light',sans-serif;">&nbsp;&nbsp;
+		    <option value="SI">SI</option>
+                    <option value="NO">NO</option>
+                </select><br></td>
+            <td style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial;border-left: none; background: white; width: 13.5642%;'><select style="width: 100%; font-size:19x; font-family:'Calibri Light',sans-serif;">&nbsp;<option value="Sector">Seleciona</option>
+                    <option value="TALLER">TALLER</option>
+                    <option value="LAVADERO">LAVADERO</option>
+                    <option value="LLANTAS">LLANTAS</option>
+                    <option value="CAMPO">CAMPO</option>
+                    <option value="SOLDADURA">SOLDADURA</option>
+                    <option value="ENSAMBLE">ENSAMBLE</option>&nbsp;
+                </select><br></td>
+            <td colspan="6" style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-image: initial; border-width: 1pt 1pt 1pt 1pt; border-style: solid; border-color: rgb(191, 191, 191) black rgb(191, 191, 191) rgb(191, 191, 191); background: white; width: 42.2785%;'><textarea style="width: 90%; height: 100%; font-size: 12px; font-family: 'Calibri', sans-serif; line-height: none; resize: none;"></textarea><br></td>
+	    </tr>
     </tbody>
 </table>
 </div>
- <h3>Subir/Tomar foto </h3>
+ <h3>Foto de tablero </h3>
       <input type="file" id="foto" name="foto"><br><br>
       
       <img id="foto-cargada"><br><br>
 
-      <h3>Enviar / Finalizar</h3>
-      <input type="button" value="Enviar para aprobar" onclick="window.print()">
+      <h3>Compartir entrega de turno</h3>
+      <input type="button" value="Compartir" onclick="window.print()">
     </form>
 
     <script>
