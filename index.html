@@ -269,17 +269,17 @@
 	</table>
 	  <script>
       <button onclick="agregarFila()">Anadir Tarea</button>
-  
-        function agregarFila() {
+	    function agregarFila() {
             var tabla = document.getElementById("miTabla2");
             var filas = tabla.getElementsByTagName("tr");
             var ultimaFila = filas[filas.length - 1]; // Obtén la última fila existente
 
             var nuevaFila = document.createElement("tr");
             nuevaFila.innerHTML = ultimaFila.innerHTML; // Copia el contenido de la última fila
+
             tabla.appendChild(nuevaFila); // Agrega la nueva fila al final de la tabla
-	  }
-    </script>
+        }
+    </script>	    
 	 <br>
   <h4>foto de tablero </h4>
       <input type="file" id="foto" name="foto"><br><br>
