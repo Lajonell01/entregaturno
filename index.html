@@ -2,10 +2,10 @@
 <html>
   <head>
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Entrega de turno CERREJON</title>
+    <title>GCOM Entrega de turno</title>
     <style>
             .imagen-pequena {
-            width: 100%;
+            width: 80%;
         }
     </style>
     
@@ -269,17 +269,27 @@
 	<button onclick="agregarFila()">Agregar fila</button>
 
     <script>
-        function agregarFila() {
-            var tabla = document.getElementById("miTabla");
-            var filas = tabla.getElementsByTagName("tr");
-            var ultimaFila = filas[filas.length - 1]; // Obtén la última fila existente
+    var contadorFilas = 0; // Variable para llevar la cuenta de las filas agregadas
 
-            var nuevaFila = document.createElement("tr");
-            nuevaFila.innerHTML = ultimaFila.innerHTML; // Copia el contenido de la última fila
+    function agregarFila() {
+        var tabla = document.getElementById("miTabla");
+        var filas = tabla.getElementsByTagName("tr");
+        var ultimaFila = filas[filas.length - 1]; // Obtén la última fila existente
 
-            tabla.appendChild(nuevaFila); // Agrega la nueva fila al final de la tabla
-        }
-    </script>
+        var nuevaFila = document.createElement("tr");
+        nuevaFila.innerHTML = ultimaFila.innerHTML; // Copia el contenido de la última fila
+
+        // Genera un nuevo identificador único para la caja de texto en la nueva fila
+        contadorFilas++;
+        var nuevaCajaTextoId = "cajaTexto" + contadorFilas;
+
+        // Busca la caja de texto en la nueva fila y asigna el nuevo identificador
+        var nuevaCajaTexto = nuevaFila.querySelector("#cajaTexto");
+        nuevaCajaTexto.id = nuevaCajaTextoId;
+
+        tabla.appendChild(nuevaFila); // Agrega la nueva fila al final de la tabla
+    }
+</script>
 </div>
  <h3>Foto de tablero </h3>
       <input type="file" id="foto" name="foto"><br><br>
