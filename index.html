@@ -234,10 +234,12 @@
                          
                 </select>
                 <script>
-                    function cambiarColor(color) {
-                    var cajaTexto = document.getElementById("cajaTexto");
-                    cajaTexto.style.backgroundColor = color;
-                    }
+                 function cambiarColor(color) {
+    var filaActual = event.target.closest("tr");
+    var cajaTexto = filaActual.querySelector("input");
+    cajaTexto.style.backgroundColor = color;
+}
+
                 </script>
             </td>
             <td style='color: black; font-size: 12px; font-weight: 700; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-image: initial; border-width: 1pt 1pt 1pt 1pt; border-style: solid; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) windowtext; background: white; height: 34.25pt; width: 9.5642%;'><select style="width: 100%; font-size:12px; font-family:'Calibri Light',sans-serif;">&nbsp;<option value="Sector">Selecciona la flota</option>
@@ -269,13 +271,6 @@
 	<button onclick="agregarFila()">Agregar fila</button>
 
     <script>
-    function cambiarColor(color) {
-    var filaActual = event.target.closest("tr");
-    var cajaTexto = filaActual.querySelector("input");
-    cajaTexto.style.backgroundColor = color;
-}
-
-
     function agregarFila() {
     var tabla = document.getElementById("miTabla");
     var filas = tabla.getElementsByTagName("tr");
