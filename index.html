@@ -263,19 +263,32 @@
         </tr>
 	</body>
 	</table>
+	<button onclick="agregarFila2()">Agregar Camion</button>
 	  <script>
-      <button onclick="agregarFila()">Anadir Tarea</button>
-	    function agregarFila() {
-            var tabla = document.getElementById("miTabla2");
-            var filas = tabla.getElementsByTagName("tr");
-            var ultimaFila = filas[filas.length - 1]; // Obtén la última fila existente
+        function agregarFila2() {
+            var tabla2 = document.getElementById("miTabla2");
+            var filas2 = tabla2.getElementsByTagName("tr");
+            var ultimaFila2 = filas2[filas2.length - 1]; // Obtén la última fila existente
 
-            var nuevaFila = document.createElement("tr");
-            nuevaFila.innerHTML = ultimaFila.innerHTML; // Copia el contenido de la última fila
+            var nuevaFila2 = document.createElement("tr");
+            nuevaFila2.innerHTML = ultimaFila2.innerHTML; // Copia el contenido de la última fila
 
-            tabla.appendChild(nuevaFila); // Agrega la nueva fila al final de la tabla
+            tabla2.appendChild(nuevaFila2); // Agrega la nueva fila al final de la tabla
         }
-    </script>	    
+    </script>
+	<button onclick="eliminarUltimaFila2()">Eliminar</button>
+  <script>
+  function eliminarUltimaFila2() {
+    var tabla2 = document.getElementById("miTabla");
+    var filas2 = tabla2.getElementsByTagName("tr");
+    
+    // Verifica si hay al menos dos filas para evitar eliminar la fila de encabezado
+    if (filas2.length > 1) {
+      var ultimaFila2 = filas2[filas2.length - 1];
+      tabla2.removeChild(ultimaFila2);
+    }
+  }
+</script>    
 	 <br>
   <h4>foto de tablero </h4>
       <input type="file" id="foto" name="foto"><br><br>
