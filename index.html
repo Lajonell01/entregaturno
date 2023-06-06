@@ -6,7 +6,7 @@
 <title>GCOM Entrega de turno</title>
 <style>
             .imagen-pequena {
-            width: 80%;
+            width: 50%;
         }
 </style>
 <style>
@@ -224,26 +224,68 @@ body {
 </script>
 
    <br>
-
- <table>     
-   <tbody>
-
+    
+    <table id="miTabla5" style="width:100%;border-collapse:collapse;">
+<tbody>
 <tr>
-<td colspan="2" style="width: 100%;background: rgb(255, 192, 0); border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 12.75pt;vertical-align: top;">
-<p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;vertical-align: baseline;'><strong><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>Accidentes, cuasi, eventos relevantes:&nbsp;</span></strong><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>&nbsp;</span></p>
-</td>
-</tr>
-<tr>
-<td colspan="2" style="width: 100%;background: rgb(255, 192, 0); border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 53.25pt;vertical-align: top;"><textarea style="width: 95%; height: 100%; font-size: 15px; font-family: 'Calibri', sans-serif; line-height: normal; resize: none;"></textarea></td>
-</tr>
-<tr>
-<td colspan="2" style="width: 100%;background: rgb(255, 192, 0); border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 12.75pt;vertical-align: top;">
+<td colspan="3" style="width: 100%;background: rgb(255, 192, 0); border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 12.75pt;vertical-align: top;">
 <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;vertical-align: baseline;'><strong><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>Resultados operacionales:&nbsp;</span></strong><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>&nbsp;</span></p>
 </td>
 </tr>
 <tr>
-<td colspan="2" style="width: 95%;background: rgb(255, 192, 0); border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 53.25pt;vertical-align: top;"><textarea style="width: 95%; height: 100%; font-size: 15px; font-family: 'Calibri', sans-serif; line-height: normal; resize: none;"></textarea></td>
+    <td colspan="1" style="width: 20%;background: rgb(251, 251, 251); border-right: 0pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 0pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 10%;vertical-align: top;">
+    <td colspan="1" style="width: 40%;background: rgb(213, 219, 219); border-right: 0pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 0pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 10%;vertical-align: top;">
+        <p style="font-size:12px; text-align:center; font-family:'Calibri Light',sans-serif;"><strong><span>CAMPO</span></strong></p></td>
+    <td colspan="1" style="width: 40%;background: rgb(213, 219, 219); border-right: 0pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 0pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 10%;vertical-align: top;">
+        <p style="font-size:12px; text-align:center; font-family:'Calibri Light',sans-serif;"><strong><span>TALLER</span></strong></p></td>
+</tr>    
+<tr>
+    <td colspan="1" style="width: 20%;background: rgb(251, 251, 251); border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 12%;vertical-align: top;">
+       <p><select style="font-size:12px; font-family:'Calibri Light',sans-serif;">&nbsp;<option value="Sector">Flota</option>
+             <option value="CAT240">CAT240</option>
+             <option value="CAT190">CAT190</option></p></td>
+    <td colspan="1" style="width: 40%;background: rgb(251, 251, 251); border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 20%;vertical-align: top;">
+        <textarea style="width: 92%; height: 85%; font-size: 15px; font-family: 'Calibri', sans-serif; line-height: normal; resize: none;"></textarea></td>
+    <td colspan="1" style="width: 40%;background: rgb(251, 251, 251); border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 20%;vertical-align: top;">
+        <textarea style="width: 92%; height: 85%; font-size: 15px; font-family: 'Calibri', sans-serif; line-height: normal; resize: none;"></textarea></td>
 </tr>
+  </tbody>
+</table>
+<button onclick="agregarFila5()">Añadir</button>
+<script>
+        function agregarFila5() {
+            var tabla5 = document.getElementById("miTabla5");
+            var filas5 = tabla5.getElementsByTagName("tr");
+            var ultimaFila5 = filas5[filas5.length - 1]; // Obtén la última fila existente
+
+ 
+
+            var nuevaFila5 = document.createElement("tr");
+            nuevaFila5.innerHTML = ultimaFila5.innerHTML; // Copia el contenido de la última fila
+
+ 
+
+            tabla5.appendChild(nuevaFila5); // Agrega la nueva fila al final de la tabla
+        }
+</script>
+<button onclick="eliminarUltimaFila5()">Eliminar</button>
+<script>
+  function eliminarUltimaFila5() {
+    var tabla5 = document.getElementById("miTabla5");
+    var filas5 = tabla5.getElementsByTagName("tr");
+
+    // Verifica si hay al menos dos filas para evitar eliminar la fila de encabezado
+    if (filas5.length > 1) {
+      var ultimaFila5 = filas5[filas5.length - 1];
+      tabla5.removeChild(ultimaFila5);
+    }
+  }
+</script>
+
+   <br>
+
+ <table>     
+   <tbody>
 <tr>
 <td colspan="" style="width: 30%;background: rgb(255, 192, 0); border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 12.75pt;vertical-align: top;">
 <p style='margi1n-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;vertical-align: baseline;'><strong><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>Tarea Observada:</span></strong><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>&nbsp;</span></p>
