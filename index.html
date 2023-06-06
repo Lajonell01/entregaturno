@@ -112,7 +112,7 @@ body {
 <table style="width:100%;border-collapse:collapse;">
 <tbody>
 <tr>
-<td colspan="3" style="width: 100%;background: rgb(255, 192, 0); border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 12.75pt;vertical-align: top;">
+<td id="miTabla3" colspan="3" style="width: 100%;background: rgb(255, 192, 0); border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 12.75pt;vertical-align: top;">
 <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;vertical-align: baseline;'><strong><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>Mejoras de salud y seguridad realizadas:&nbsp;</span></strong><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>&nbsp;</span></p>
 </td>
 </tr>
@@ -125,7 +125,43 @@ body {
         <p style="font-size:12px; font-family:'Calibri Light',sans-serif;">CAMPO</p><textarea style="width: 90%; height: 40%; font-size: 15px; font-family: 'Calibri', sans-serif; line-height: normal; resize: none;"></textarea></td>
     <td colspan="1" style="width: 38%;background: rgb(251, 251, 251); border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 20%;vertical-align: top;">
         <p style="font-size:12px; font-family:'Calibri Light',sans-serif;">TALLER</p><textarea style="width: 90%; height: 40%; font-size: 15px; font-family: 'Calibri', sans-serif; line-height: normal; resize: none;"></textarea></td>
-</tr>    
+</tr>
+  </tbody>
+</table>
+<button onclick="agregarFila3()">+</button>
+<script>
+        function agregarFila3() {
+            var tabla3 = document.getElementById("miTabla3");
+            var filas3 = tabla3.getElementsByTagName("tr");
+            var ultimaFila3 = filas3[filas3.length - 1]; // Obtén la última fila existente
+
+ 
+
+            var nuevaFila3 = document.createElement("tr");
+            nuevaFila3.innerHTML = ultimaFila3.innerHTML; // Copia el contenido de la última fila
+
+ 
+
+            tabla3.appendChild(nuevaFila3); // Agrega la nueva fila al final de la tabla
+        }
+</script>
+<button onclick="eliminarUltimaFila3()">Eliminar</button>
+<script>
+  function eliminarUltimaFila3() {
+    var tabla3 = document.getElementById("miTabla3");
+    var filas3 = tabla3.getElementsByTagName("tr");
+
+    // Verifica si hay al menos dos filas para evitar eliminar la fila de encabezado
+    if (filas3.length > 1) {
+      var ultimaFila3 = filas3[filas3.length - 1];
+      tabla3.removeChild(ultimaFila3);
+    }
+  }
+</script>
+
+   <br>
+    
+    
 <tr>
 <td colspan="10" style="width: 467.2pt;background: rgb(255, 192, 0); border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 53.25pt;vertical-align: top;"><textarea style="width: 95%; height: 100%; font-size: 15px; font-family: 'Calibri', sans-serif; line-height: normal; resize: none;"></textarea></td>
 </tr>
