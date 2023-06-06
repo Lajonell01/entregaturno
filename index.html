@@ -116,7 +116,7 @@ body {
 </td>
 </tr>
 <tr>
-    <td colspan="1" style="width: 24%;background: rgb(251, 251, 251); border-right: 0pt solid windowtext;border-bottom: 0pt solid windowtext;border-left: 0pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 12%;vertical-align: top;">
+    <td colspan="1" style="width: 24%;background: rgb(251, 251, 251); border-right: 0pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 0pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 12%;vertical-align: top;">
     <td colspan="1" style="width: 38%;background: rgb(251, 251, 251); border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 20%;vertical-align: top;">
         <p style="font-size:12px; font-family:'Calibri Light',sans-serif;"><span>CAMPO</span></p></td>
     <td colspan="1" style="width: 38%;background: rgb(251, 251, 251); border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in;height: 20%;vertical-align: top;">
@@ -134,7 +134,7 @@ body {
 </tr>
   </tbody>
 </table>
-<button onclick="agregarFila3()">(+)</button>
+<button onclick="agregarFila3()">Añadir</button>
 <script>
         function agregarFila3() {
             var tabla3 = document.getElementById("miTabla3");
@@ -151,7 +151,7 @@ body {
             tabla3.appendChild(nuevaFila3); // Agrega la nueva fila al final de la tabla
         }
 </script>
-<button onclick="eliminarUltimaFila3()">(-)</button>
+<button onclick="eliminarUltimaFila3()">Eliminar</button>
 <script>
   function eliminarUltimaFila3() {
     var tabla3 = document.getElementById("miTabla3");
