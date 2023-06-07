@@ -484,6 +484,88 @@ body {
   }
 </script>    
 <br>
+<table class="table table-bordered" style="width: 100%">
+  <thead>
+    <tr>
+      <th scope="col"># Hangar</th>
+      <th scope="col">Orden</th>
+      <th scope="col">Aseo</th>
+      <th scope="col">Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">
+        <select onchange="changeColor(this)">
+          <option>HANGAR 2B</option>
+          <option>HANGAR 3B</option>
+          <option>HANGAR 4B</option>
+          <option>HANGAR 5B</option>
+          <option>HANGAR 6B</option>
+          <option>HANGAR 7B</option>
+          <option>HANGAR 8B</option>
+          <option>HANGAR 9B</option>
+          <option>HANGAR 10B</option>
+          <option>HANGAR 12A</option>
+          <option>HANGAR 13A</option>
+          <option>HANGAR 14A</option>
+          <option>HANGAR 40A</option>
+          <option>HANGAR 40B</option>
+          <option>HANGAR 40B</option>
+        </select>
+      </th>
+      <td>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onchange="changeColor(this)">
+          <label class="form-check-label" for="flexSwitchCheckDefault">✅</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onchange="changeColor(this)">
+          <label class="form-check-label" for="flexSwitchCheckChecked">❌</label>
+        </div>
+      </td>
+      <td>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onchange="changeColor(this)">
+          <label class="form-check-label" for="flexSwitchCheckDefault">✅</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onchange="changeColor(this)">
+          <label class="form-check-label" for="flexSwitchCheckChecked">❌</label>
+        </div>
+      </td>
+      <td class="color-cell">Color</td>
+    </tr>
+  </tbody>
+</table>
+
+<style>
+  .color-cell {
+    transition: background-color 0.3s ease;
+  }
+
+  .color-cell.green {
+    background-color: green;
+  }
+
+  .color-cell.red {
+    background-color: red;
+  }
+</style>
+
+<script>
+  function changeColor(element) {
+    var cell = element.parentElement.parentElement.nextElementSibling;
+
+    if (element.checked) {
+      cell.classList.add(element.value);
+    } else {
+      cell.classList.remove(element.value);
+    }
+  }
+</script>
+
+
 <h4>foto de tablero </h4>
 <input type="file" id="foto" name="foto"><br><br>
 
