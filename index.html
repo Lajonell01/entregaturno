@@ -553,6 +553,10 @@ body {
   .selected-red {
     background-color: red;
   }
+  
+  .centered {
+    text-align: center;
+  }
 </style>
 
 <script>
@@ -579,6 +583,9 @@ body {
           } else if (radio.value === "❌") {
             radioTd.classList.add("selected-red");
           }
+        } else {
+          radioTd.classList.remove("selected-green");
+          radioTd.classList.remove("selected-red");
         }
       } else {
         radio.checked = false;
