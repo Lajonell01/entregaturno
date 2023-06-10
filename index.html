@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GCOM Entrega de turno</title>
 <style>
-    .autoresize {
-  width: 90%; /* Puedes ajustar este valor según tus necesidades */
-  min-width: 90%; /* Asegura que el tamaño mínimo no sea menor al ancho inicial */
-  resize: none; /* Evita que el usuario pueda ajustar manualmente el tamaño */
-  overflow: hidden; /* Oculta el desbordamiento de texto */
-}
             .imagen-pequena {
             width: 50%;
         }
@@ -396,24 +390,8 @@ body {
 <option value="SOLDADURA">SOLDADURA</option>
 <option value="ENSAMBLE">ENSAMBLE</option>&nbsp;
 </select><br></td>
-<td colspan="6" style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-image: initial; border-width: 1pt 1pt 1pt 1pt; border-style: solid; border-color: rgb(191, 191, 191) black rgb(191, 191, 191) rgb(191, 191, 191); background: white; width: 42.2785%;'><textarea class="autoresize" style="width: 90%; height: 100%; font-size: 12px; font-family: 'Calibri', sans-serif; line-height: none; resize: none;"></textarea><br></td>
-<script>
-    function adjustSize() {
-  const inputs = document.getElementsByClassName('autoresize');
-  for (let i = 0; i < inputs.length; i++) {
-    const input = inputs[i];
-    input.style.width = 'auto'; // Restablece el ancho a "auto" para obtener el tamaño deseado
-    input.style.width = input.scrollWidth + 'px'; // Ajusta el ancho al tamaño del contenido
-  }
-}
-
-// Llama a la función adjustSize() cada vez que se ingresa o modifica el contenido en cualquier campo de texto
-const inputElements = document.getElementsByClassName('autoresize');
-for (let i = 0; i < inputElements.length; i++) {
-  inputElements[i].addEventListener('input', adjustSize);
-}
-    </script>
-    </tr>
+<td colspan="6" style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-image: initial; border-width: 1pt 1pt 1pt 1pt; border-style: solid; border-color: rgb(191, 191, 191) black rgb(191, 191, 191) rgb(191, 191, 191); background: white; width: 42.2785%;'><textarea style="width: 90%; height: 100%; font-size: 12px; font-family: 'Calibri', sans-serif; line-height: none; resize: none;"></textarea><br></td>
+</tr>
 </tbody>
 </table>
 <button onclick="agregarFila()">Agregar Camion</button>
