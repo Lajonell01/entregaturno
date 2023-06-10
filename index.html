@@ -337,7 +337,7 @@ body {
 </tr>
 <tr>
 <td style='color: black; font-size: 12px; font-weight: 700; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-top: 1pt solid rgb(191, 191, 191); border-right: 1pt solid rgb(191, 191, 191); border-bottom: 1pt solid rgb(191, 191, 191); border-image: initial; border-left: none; width: 6%;'>
-<select onchange="cambiarColor(this.value)">
+<select onchange="cambiarColor1(this.value)">
 <option value="WHITE">F.O</option>
 <option value="GreenYellow">12HRS</option>
 <option value="LightSkyBlue">24HRS</option>
@@ -345,7 +345,7 @@ body {
 
 </select>
 <script>
-                 function cambiarColor(color) {
+                 function cambiarColor1(color) {
     var filaActual = event.target.closest("tr");
     var cajaTexto = filaActual.querySelector("input");
     cajaTexto.style.backgroundColor = color;
