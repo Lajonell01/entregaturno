@@ -614,6 +614,10 @@ body {
   .centered {
     text-align: center;
   }
+  
+  .unselected {
+    background-color: white;
+  }
 </style>
 
 <script>
@@ -628,6 +632,8 @@ body {
       
       if (radio === element) {
         if (radio.checked) {
+          radioTd.classList.remove("unselected");
+
           if (radioTd.classList.contains("selected-green")) {
             radioTd.classList.remove("selected-green");
           }
@@ -643,13 +649,16 @@ body {
         } else {
           radioTd.classList.remove("selected-green");
           radioTd.classList.remove("selected-red");
+          radioTd.classList.add("unselected");
         }
       } else {
         radio.checked = false;
+        radioTd.classList.add("unselected");
       }
     }
   }
 </script>
+
 <p>&nbsp;</p>
 <table id="miTabla2" style="width:100%;border-collapse:collapse;" >    
 <body>
