@@ -396,7 +396,8 @@ body {
     var textareas = document.getElementsByTagName("textarea");
     for (var i = 0; i < textareas.length; i++) {
       var textarea = textareas[i];
-      textarea.style.height = textarea.scrollHeight + "px";
+      textarea.style.height = "auto"; // Restablecer la altura a "auto" para que se ajuste al contenido
+      textarea.style.height = textarea.scrollHeight + "px"; // Establecer la altura según el contenido
     }
   }
 
