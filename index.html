@@ -391,6 +391,18 @@ body {
 <option value="ENSAMBLE">ENSAMBLE</option>&nbsp;
 </select><br></td>
 <td colspan="6" style='color: black; font-size: 12px; font-weight: 400; font-style: normal; text-decoration: none; font-family: "Century Gothic", sans-serif; text-align: center; vertical-align: middle; border-image: initial; border-width: 1pt 1pt 1pt 1pt; border-style: solid; border-color: rgb(191, 191, 191) black rgb(191, 191, 191) rgb(191, 191, 191); background: white; width: 42.2785%;'><textarea style="width: 90%; height: 100%; font-size: 12px; font-family: 'Calibri', sans-serif; line-height: none; resize: none;"></textarea><br></td>
+<script>
+  function ajustarAlturaTextarea() {
+    var textareas = document.getElementsByTagName("textarea");
+    for (var i = 0; i < textareas.length; i++) {
+      var textarea = textareas[i];
+      textarea.style.height = textarea.scrollHeight + "px";
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", ajustarAlturaTextarea);
+  window.addEventListener("input", ajustarAlturaTextarea);
+</script>
 </tr>
 </tbody>
 </table>
